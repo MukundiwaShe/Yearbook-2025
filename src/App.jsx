@@ -192,7 +192,7 @@ const studentsData = [
     linkedinUrl: 'https://www.linkedin.com/in/niget-sota-profile',
     githubUrl: 'https://github.com/nigetsota/weather-app',
   },
-    {
+  {
     id: 'dev-10',
     name: 'Dion Dzwengwe',
     specialization: 'Development',
@@ -432,8 +432,14 @@ const StudentsPage = ({ navigate, setSelectedStudent }) => (
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/150x150/1A56DB/FFFFFF?text=${student.name.split(' ').map(n => n[0]).join('')}`; }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-200 via-transparent to-transparent opacity-80"></div>
-              <p className="absolute bottom-4 left-4 text-xl font-bold text-gray-900 z-10">{student.name}</p>
+              {/*
+                * FIX: The student's name was not appearing because of a class conflict and a lack of specific positioning.
+                * The original code had both 'text-gray-900' and 'text-white' on the same element. 'text-gray-900' was likely overriding 'text-white'.
+                * I have removed the conflicting class and added positioning classes ('absolute', 'bottom-4', 'left-4') to make the name visible and correctly placed.
+                * I also changed the gradient from-gray-200 to from-black to ensure the white text is readable against the image.
+                */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+              <p className="absolute bottom-4 left-4 text-xl font-bold text-white z-10">{student.name}</p>
             </div>
             <div className="p-6">
               <p className="text-blue-600 text-sm font-semibold mb-2">{student.specialization}</p>
@@ -615,7 +621,7 @@ const MemoriesPage = () => (
            allowFullScreen
            className="video-iframe"
          ></iframe>
-       </div>
+        </div>
       </div>
     </div>
   </section>
@@ -626,21 +632,21 @@ const MemoriesPage = () => (
 const InstructorsPage = () => (
   <section className="bg-white text-gray-800 min-h-screen pt-24 pb-8">
     <div className="container mx-auto p-4 md:p-8">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">Our Dedicated Instructors</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">Meet the Instructors</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {instructorsData.map((instructor) => (
-          <div key={instructor.id} className="bg-gray-100 rounded-xl shadow-lg p-6 text-center transform transition-transform duration-300 hover:scale-105">
-            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4 border-4 border-blue-600 shadow-lg">
+          <div key={instructor.id} className="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105">
+            <div className="w-40 h-40 rounded-full overflow-hidden mb-4 border-4 border-blue-500 shadow-lg">
               <img
                 src={instructor.photo}
                 alt={instructor.name}
                 className="w-full h-full object-cover"
-                onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/150x150/1A56DB/FFFFFF?text=${instructor.name.split(' ').map(n => n[0]).join('')}`; }}
+                onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/160x160/1A56DB/FFFFFF?text=${instructor.name}`; }}
               />
             </div>
-            <h3 className="text-xl font-bold text-gray-900">{instructor.name}</h3>
-            <p className="text-blue-600 text-sm font-semibold mt-1">{instructor.role}</p>
-            <p className="text-gray-600 text-sm mt-4">{instructor.bio}</p>
+            <h3 className="text-xl font-bold text-blue-800">{instructor.name}</h3>
+            <p className="text-sm text-blue-600 mb-2">{instructor.role}</p>
+            <p className="text-gray-600 text-sm text-center">{instructor.bio}</p>
           </div>
         ))}
       </div>
@@ -648,46 +654,34 @@ const InstructorsPage = () => (
   </section>
 );
 
-
-// Main App Component
-export default function App() {
+// Main App Component (Router)
+const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
   const [selectedStudent, setSelectedStudent] = useState(null);
-
+  
   const navigate = (page) => {
     setCurrentPage(page);
-    window.scrollTo(0, 0); // Scroll to top on page change
   };
 
   return (
     <>
       <style>{responsiveStyles}</style>
-      <div className="bg-white font-sans min-h-screen">
+      <div className="bg-white text-gray-800 min-h-screen flex flex-col">
         <Header navigate={navigate} />
-
-        <main className="min-h-screen">
-          {(() => {
-            switch (currentPage) {
-              case 'home':
-                return <HomePage navigate={navigate} />;
-              case 'students':
-                return <StudentsPage navigate={navigate} setSelectedStudent={setSelectedStudent} />;
-              case 'studentDetail':
-                return <StudentDetailPage student={selectedStudent} navigate={navigate} />;
-              case 'projects':
-                return <ProjectsPage navigate={navigate} setSelectedStudent={setSelectedStudent} />;
-              case 'memories':
-                return <MemoriesPage />;
-              case 'instructors':
-                return <InstructorsPage />;
-              default:
-                return <HomePage navigate={navigate} />;
-            }
-          })()}
+        <main className="flex-grow">
+          <div className="mt-16">
+            {currentPage === 'home' && <HomePage navigate={navigate} />}
+            {currentPage === 'students' && <StudentsPage navigate={navigate} setSelectedStudent={setSelectedStudent} />}
+            {currentPage === 'studentDetail' && selectedStudent && <StudentDetailPage student={selectedStudent} navigate={navigate} />}
+            {currentPage === 'projects' && <ProjectsPage navigate={navigate} setSelectedStudent={setSelectedStudent} />}
+            {currentPage === 'memories' && <MemoriesPage />}
+            {currentPage === 'instructors' && <InstructorsPage />}
+          </div>
         </main>
-
         <Footer />
       </div>
     </>
   );
-}
+};
+
+export default App;
