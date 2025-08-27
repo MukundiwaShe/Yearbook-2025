@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Home, Users, LayoutDashboard, Sparkles, BookOpenText } from 'lucide-react';
 
 // The following CSS is added to make the video in the Memories page responsive
 // It uses a common technique with a container to maintain a 16:9 aspect ratio.
@@ -24,10 +23,6 @@ const responsiveStyles = `
     height: 100%;
     width: 100%;
     position: absolute;
-  }
-  .nav-icon {
-    width: 20px;
-    height: 20px;
   }
 `;
 
@@ -296,11 +291,11 @@ const studentsData = [
     specialization: 'Design',
     hub: 'Dzivarasekwa',
     photo: '/images/anesu-mamu.jpg',
-    projectTitle: 'Motion Graphics for Explainer Video',
-    projectDescription: 'Developed engaging motion graphics and animations for a short explainer video, simplifying complex concepts for a broad audience.',
-    projectImage: 'https://placehold.co/400x250/EC4899/FFFFFF?text=Design+Project+8',
+    projectTitle: 'An online electronics store',
+    projectDescription: 'Anesu created an online electronics store that redefines the way people shop for gadgets. His design approach prioritizes intuitive navigation, visually appealing interfaces, and streamlined checkout processes, making is app a go-to destination for tech enthusiasts.',
+    projectImage: '/images/mamu pr.jpg',
     linkedinUrl: 'https://www.linkedin.com/in/anesu-mamu-profile',
-    githubUrl: null,
+    githubUrl: 'https://www.figma.com/design/bxq0dk1ri9SfIF3de2bLDd/Ancola?node-id=0-1&t=z9hV0KWwOr0QZZnY-1',
   },
 ];
 
@@ -335,33 +330,33 @@ const Header = ({ navigate }) => (
   <header className="fixed top-0 left-0 w-full bg-blue-600 text-white shadow-lg z-50">
     <div className="container mx-auto p-4 flex flex-col md:flex-row items-center justify-between">
       <div className="flex items-center space-x-2 mb-4 md:mb-0">
-        <h1 className="text-xl md:text-2xl font-bold font-inter text-white">Dzivarasekwa Hub Yearbook</h1>
+        <h1 className="text-xl md:text-2xl font-bold font-inter text-white">Dz Hub Yearbook</h1>
       </div>
       <nav className="w-full md:w-auto">
         <ul className="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 text-center md:text-left">
           <li>
-            <button onClick={() => navigate('home')} className="flex items-center justify-center space-x-2 px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
-              <Home className="nav-icon" /> <span className="font-medium">Home</span>
+            <button onClick={() => navigate('home')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+              <span className="font-medium">Home</span>
             </button>
           </li>
           <li>
-            <button onClick={() => navigate('students')} className="flex items-center justify-center space-x-2 px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
-              <Users className="nav-icon" /> <span className="font-medium">Students</span>
+            <button onClick={() => navigate('students')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+              <span className="font-medium">Students</span>
             </button>
           </li>
           <li>
-            <button onClick={() => navigate('projects')} className="flex items-center justify-center space-x-2 px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
-              <Sparkles className="nav-icon" /> <span className="font-medium">Projects</span>
+            <button onClick={() => navigate('projects')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+              <span className="font-medium">Projects</span>
             </button>
           </li>
           <li>
-            <button onClick={() => navigate('memories')} className="flex items-center justify-center space-x-2 px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
-              <BookOpenText className="nav-icon" /> <span className="font-medium">Memories</span>
+            <button onClick={() => navigate('memories')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+              <span className="font-medium">Memories</span>
             </button>
           </li>
           <li>
-            <button onClick={() => navigate('instructors')} className="flex items-center justify-center space-x-2 px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
-              <LayoutDashboard className="nav-icon" /> <span className="font-medium">Instructors</span>
+            <button onClick={() => navigate('instructors')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+              <span className="font-medium">Instructors</span>
             </button>
           </li>
         </ul>
@@ -606,7 +601,7 @@ const ProjectsPage = ({ navigate, setSelectedStudent }) => (
 const MemoriesPage = () => (
   <section className="bg-white text-gray-800 min-h-screen pt-24 pb-8">
     <div className="container mx-auto p-4 md:p-8 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-4">Hub Memories</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-4">Hub Memories Throughout The Year</h2>
       <p className="text-lg text-gray-600 mb-8">
         Watch our highlight reel and relive some of the best moments from our time at the Dzivarasekwa Hub!
       </p>
@@ -627,26 +622,25 @@ const MemoriesPage = () => (
   </section>
 );
 
-
 // Instructors Page Component
 const InstructorsPage = () => (
   <section className="bg-white text-gray-800 min-h-screen pt-24 pb-8">
     <div className="container mx-auto p-4 md:p-8">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">Meet the Instructors</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {instructorsData.map((instructor) => (
-          <div key={instructor.id} className="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105">
-            <div className="w-40 h-40 rounded-full overflow-hidden mb-4 border-4 border-blue-500 shadow-lg">
+          <div key={instructor.id} className="bg-gray-100 rounded-xl shadow-lg p-6 text-center">
+            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4 border-4 border-blue-600">
               <img
                 src={instructor.photo}
                 alt={instructor.name}
                 className="w-full h-full object-cover"
-                onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/160x160/1A56DB/FFFFFF?text=${instructor.name}`; }}
+                onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/128x128/1A56DB/FFFFFF?text=${instructor.name.split(' ').map(n => n[0]).join('')}`; }}
               />
             </div>
             <h3 className="text-xl font-bold text-blue-800">{instructor.name}</h3>
-            <p className="text-sm text-blue-600 mb-2">{instructor.role}</p>
-            <p className="text-gray-600 text-sm text-center">{instructor.bio}</p>
+            <p className="text-md text-blue-600 mb-2">{instructor.role}</p>
+            <p className="text-sm text-gray-600">{instructor.bio}</p>
           </div>
         ))}
       </div>
@@ -654,33 +648,49 @@ const InstructorsPage = () => (
   </section>
 );
 
-// Main App Component (Router)
+
+// Main App Component
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('home');
+  const [page, setPage] = useState('home');
   const [selectedStudent, setSelectedStudent] = useState(null);
-  
-  const navigate = (page) => {
-    setCurrentPage(page);
+
+  const navigate = (nextPage, student = null) => {
+    setPage(nextPage);
+    if (student) {
+      setSelectedStudent(student);
+    }
+    // Scroll to the top when navigating
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const renderPage = () => {
+    switch (page) {
+      case 'home':
+        return <HomePage navigate={navigate} />;
+      case 'students':
+        return <StudentsPage navigate={navigate} setSelectedStudent={setSelectedStudent} />;
+      case 'studentDetail':
+        return <StudentDetailPage student={selectedStudent} navigate={navigate} />;
+      case 'projects':
+        return <ProjectsPage navigate={navigate} setSelectedStudent={setSelectedStudent} />;
+      case 'memories':
+        return <MemoriesPage />;
+      case 'instructors':
+        return <InstructorsPage />;
+      default:
+        return <HomePage navigate={navigate} />;
+    }
   };
 
   return (
-    <>
+    <div className="bg-gray-50 min-h-screen font-inter">
       <style>{responsiveStyles}</style>
-      <div className="bg-white text-gray-800 min-h-screen flex flex-col">
-        <Header navigate={navigate} />
-        <main className="flex-grow">
-          <div className="mt-16">
-            {currentPage === 'home' && <HomePage navigate={navigate} />}
-            {currentPage === 'students' && <StudentsPage navigate={navigate} setSelectedStudent={setSelectedStudent} />}
-            {currentPage === 'studentDetail' && selectedStudent && <StudentDetailPage student={selectedStudent} navigate={navigate} />}
-            {currentPage === 'projects' && <ProjectsPage navigate={navigate} setSelectedStudent={setSelectedStudent} />}
-            {currentPage === 'memories' && <MemoriesPage />}
-            {currentPage === 'instructors' && <InstructorsPage />}
-          </div>
-        </main>
-        <Footer />
-      </div>
-    </>
+      <Header navigate={navigate} />
+      <main className="container mx-auto px-4 md:px-8">
+        {renderPage()}
+      </main>
+      <Footer />
+    </div>
   );
 };
 
