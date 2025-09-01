@@ -258,7 +258,7 @@ const studentsData = [
     projectTitle: 'E-Commerce App',
     projectDescription: 'E-commerce app that sells hygiene products.',
     projectImage: '/images/servie-pr.png',
-    linkedinUrl: 'https://www.linkedin.com/posts/kirsty-matyukira-008766309_darkui-ecommercedesign-womenintech-activity-7354514399430115330-N5Og?utm_source=share&utm_medium=member_ios&rcm=ACoAAFaWnqYBpO85Nb-tzPm_JxfibqBM8rbTXKs c             ;p',
+    linkedinUrl: 'https://www.linkedin.com/posts/kirsty-matyukira-008766309_darkui-ecommercedesign-womenintech-activity-7354514399430115330-N5Og?utm_source=share&utm_medium=member_ios&rcm=ACoAAFaWnqYBpO85Nb-tzPm_JxfibqBM8rbTXKs c ;p',
     githubUrl: null,
   },
   {
@@ -326,44 +326,98 @@ const instructorsData = [
 
 
 // Header Component
-const Header = ({ navigate }) => (
-  <header className="fixed top-0 left-0 w-full bg-blue-600 text-white shadow-lg z-50">
-    <div className="container mx-auto p-4 flex flex-col md:flex-row items-center justify-between">
-      <div className="flex items-center space-x-2 mb-4 md:mb-0">
-        <h1 className="text-xl md:text-2xl font-bold font-inter text-white">Dz Hub Yearbook</h1>
+const Header = ({ navigate }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Function to close the menu when a link is clicked
+  const handleNavLinkClick = (page) => {
+    setIsMenuOpen(false);
+    navigate(page);
+  };
+  
+  return (
+    <header className="fixed top-0 left-0 w-full bg-blue-600 text-white shadow-lg z-50">
+      <div className="container mx-auto p-4 flex items-center justify-between">
+        <div className="flex items-center space-x-2">
+          <h1 className="text-xl md:text-2xl font-bold font-inter text-white">Dz Hub Yearbook</h1>
+        </div>
+        {/* Mobile menu toggle button */}
+        <button 
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden text-white focus:outline-none"
+          aria-label="Toggle navigation"
+        >
+          <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            {isMenuOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+            )}
+          </svg>
+        </button>
+        <nav className="hidden md:block">
+          <ul className="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 text-center md:text-left">
+            <li>
+              <button onClick={() => handleNavLinkClick('home')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+                <span className="font-medium">Home</span>
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavLinkClick('students')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+                <span className="font-medium">Students</span>
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavLinkClick('projects')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+                <span className="font-medium">Projects</span>
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavLinkClick('memories')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+                <span className="font-medium">Memories</span>
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavLinkClick('instructors')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+                <span className="font-medium">Instructors</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav className="w-full md:w-auto">
-        <ul className="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 text-center md:text-left">
+      {/* Collapsible mobile menu */}
+      <nav className={`${isMenuOpen ? 'h-auto py-2' : 'h-0'} md:hidden overflow-hidden transition-all duration-300 ease-in-out`}>
+        <ul className="flex flex-col space-y-2 text-center">
           <li>
-            <button onClick={() => navigate('home')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+            <button onClick={() => handleNavLinkClick('home')} className="w-full px-4 py-2 text-white hover:bg-blue-700 transition-colors duration-300 rounded-lg">
               <span className="font-medium">Home</span>
             </button>
           </li>
           <li>
-            <button onClick={() => navigate('students')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+            <button onClick={() => handleNavLinkClick('students')} className="w-full px-4 py-2 text-white hover:bg-blue-700 transition-colors duration-300 rounded-lg">
               <span className="font-medium">Students</span>
             </button>
           </li>
           <li>
-            <button onClick={() => navigate('projects')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+            <button onClick={() => handleNavLinkClick('projects')} className="w-full px-4 py-2 text-white hover:bg-blue-700 transition-colors duration-300 rounded-lg">
               <span className="font-medium">Projects</span>
             </button>
           </li>
           <li>
-            <button onClick={() => navigate('memories')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+            <button onClick={() => handleNavLinkClick('memories')} className="w-full px-4 py-2 text-white hover:bg-blue-700 transition-colors duration-300 rounded-lg">
               <span className="font-medium">Memories</span>
             </button>
           </li>
           <li>
-            <button onClick={() => navigate('instructors')} className="w-full flex items-center justify-center px-4 py-2 text-white hover:text-gray-200 transition-colors duration-300 rounded-lg">
+            <button onClick={() => handleNavLinkClick('instructors')} className="w-full px-4 py-2 text-white hover:bg-blue-700 transition-colors duration-300 rounded-lg">
               <span className="font-medium">Instructors</span>
             </button>
           </li>
         </ul>
       </nav>
-    </div>
-  </header>
-);
+    </header>
+  );
+};
 
 // Footer Component
 const Footer = () => (
@@ -428,11 +482,11 @@ const StudentsPage = ({ navigate, setSelectedStudent }) => (
                 onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/150x150/1A56DB/FFFFFF?text=${student.name.split(' ').map(n => n[0]).join('')}`; }}
               />
               {/*
-                * FIX: The student's name was not appearing because of a class conflict and a lack of specific positioning.
-                * The original code had both 'text-gray-900' and 'text-white' on the same element. 'text-gray-900' was likely overriding 'text-white'.
-                * I have removed the conflicting class and added positioning classes ('absolute', 'bottom-4', 'left-4') to make the name visible and correctly placed.
-                * I also changed the gradient from-gray-200 to from-black to ensure the white text is readable against the image.
-                */}
+                 * FIX: The student's name was not appearing because of a class conflict and a lack of specific positioning.
+                 * The original code had both 'text-gray-900' and 'text-white' on the same element. 'text-gray-900' was likely overriding 'text-white'.
+                 * I have removed the conflicting class and added positioning classes ('absolute', 'bottom-4', 'left-4') to make the name visible and correctly placed.
+                 * I also changed the gradient from-gray-200 to from-black to ensure the white text is readable against the image.
+                 */}
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
               <p className="absolute bottom-4 left-4 text-xl font-bold text-white z-10">{student.name}</p>
             </div>
@@ -608,14 +662,14 @@ const MemoriesPage = () => (
       {/* The video container now uses the responsive styling */}
       <div className="max-w-4xl mx-auto rounded-xl shadow-2xl">
         <div className="video-responsive">
-         <iframe
-           src="https://www.youtube.com/embed/rhwMgVx8oTM"
-           title="Dzivarasekwa Hub Memories Video"
-           frameBorder="0"
-           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-           allowFullScreen
-           className="video-iframe"
-         ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/rhwMgVx8oTM"
+            title="Dzivarasekwa Hub Memories Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="video-iframe"
+          ></iframe>
         </div>
       </div>
     </div>
@@ -626,21 +680,24 @@ const MemoriesPage = () => (
 const InstructorsPage = () => (
   <section className="bg-white text-gray-800 min-h-screen pt-24 pb-8">
     <div className="container mx-auto p-4 md:p-8">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">Meet the Instructors</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">Our Instructors</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {instructorsData.map((instructor) => (
-          <div key={instructor.id} className="bg-gray-100 rounded-xl shadow-lg p-6 text-center">
-            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4 border-4 border-blue-600">
+          <div
+            key={instructor.id}
+            className="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105"
+          >
+            <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-blue-600">
               <img
                 src={instructor.photo}
                 alt={instructor.name}
                 className="w-full h-full object-cover"
-                onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/128x128/1A56DB/FFFFFF?text=${instructor.name.split(' ').map(n => n[0]).join('')}`; }}
+                onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/150x150/000000/FFFFFF?text=${instructor.name.split(' ').map(n => n[0]).join('')}`; }}
               />
             </div>
             <h3 className="text-xl font-bold text-blue-800">{instructor.name}</h3>
-            <p className="text-md text-blue-600 mb-2">{instructor.role}</p>
-            <p className="text-sm text-gray-600">{instructor.bio}</p>
+            <p className="text-blue-600 text-sm font-medium">{instructor.role}</p>
+            <p className="text-gray-600 text-sm mt-4">{instructor.bio}</p>
           </div>
         ))}
       </div>
@@ -648,23 +705,18 @@ const InstructorsPage = () => (
   </section>
 );
 
-
 // Main App Component
 const App = () => {
-  const [page, setPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState('home');
   const [selectedStudent, setSelectedStudent] = useState(null);
 
-  const navigate = (nextPage, student = null) => {
-    setPage(nextPage);
-    if (student) {
-      setSelectedStudent(student);
-    }
-    // Scroll to the top when navigating
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Simple navigation function
+  const navigate = (page) => {
+    setCurrentPage(page);
   };
-
+  
   const renderPage = () => {
-    switch (page) {
+    switch (currentPage) {
       case 'home':
         return <HomePage navigate={navigate} />;
       case 'students':
@@ -683,10 +735,10 @@ const App = () => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen font-inter">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <style>{responsiveStyles}</style>
       <Header navigate={navigate} />
-      <main className="container mx-auto px-4 md:px-8">
+      <main className="flex-grow">
         {renderPage()}
       </main>
       <Footer />
