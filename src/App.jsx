@@ -690,9 +690,6 @@ const MemoriesPage = () => (
   <section className="bg-white text-gray-800 min-h-screen pt-24 pb-8">
     <div className="container mx-auto p-4 md:p-8">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">Memories & Highlights</h2>
-      <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-        A glimpse into our journey together—from late-night coding sessions to collaborative design sprints and memorable presentations.
-      </p>
       
       {/* Video Section */}
       <div className="max-w-4xl mx-auto mb-12">
@@ -701,29 +698,12 @@ const MemoriesPage = () => (
           <iframe 
             width="560" 
             height="315" 
-            src="https://www.youtube.com/embed/O-L2iY003e8" 
+            src="https://www.youtube.com/watch?v=xO4-dgte-1A" 
             frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowFullScreen
             title="Uncommon.org Dzivarasekwa Hub Journey"
           ></iframe>
-        </div>
-      </div>
-
-      {/* Photo Gallery Section */}
-      <div className="max-w-6xl mx-auto">
-        <h3 className="text-2xl font-bold text-blue-800 mb-4">Photo Gallery</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-08-27 at 14.46.29_79694878.jpg" alt="Gallery photo" />
-          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/Screenshot (172).png" alt="Gallery photo" />
-          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-08-22 at 14.10.33_8e6a21c3.jpg" alt="Gallery photo" />
-          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-09-10 at 08.24.44_4a3ee25a.jpg" alt="Gallery photo" />
-          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-09-10 at 08.24.44_c8b05d6b.jpg" alt="Gallery photo" />
-          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-09-10 at 08.24.45_04886c87.jpg" alt="Gallery photo" />
-          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-09-10 at 08.14.20_cda7edf2.jpg" alt="Gallery photo" />
-          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-09-10 at 08.14.21_5b757a84.jpg" alt="Gallery photo" />
-          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-08-27 at 15.42.10_1d549251.jpg" alt="Gallery photo" />
-          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/Screenshot (175).png" alt="Gallery photo" />
         </div>
       </div>
     </div>
