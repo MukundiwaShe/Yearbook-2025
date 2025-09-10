@@ -28,7 +28,233 @@ const responsiveStyles = `
 
 // Updated student data for Dzivarasekwa Hub with project links
 const studentsData = [
-  // Digital Marketing Students
+
+  // Development Students
+  {
+    id: 'dev-1',
+    name: 'Nicole Tatenda Zonke (Me)',
+    specialization: 'Development',
+    hub: 'Dzivarasekwa',
+    photo: '/images/mukundi.jpg',
+    projectTitle: 'Interactive Yearbook Web Application',
+    projectDescription: 'Built a web application to showcase student profiles and projects for the Dzivarasekwa Hub yearbook, featuring responsive design and smooth navigation.',
+    projectImage: '/images/my pr.png',
+    linkedinUrl: 'https://www.linkedin.com/in/nicole-zonke-profile', 
+    githubUrl: 'https://github.com/nicolezonke/yearbook-project', 
+  },
+  { id: 'dev-6',
+    name: 'Funie Franklin Zhuwao',
+    specialization: 'Development',
+    hub: 'Dzivarasekwa',
+    photo: '/images/funie-zhuwao.jpg',
+    projectTitle: 'Crop Disease Detection',
+    projectDescription: 'Developed a web application where users can upload crop pictures to detect the crop disease, discover.',
+    projectImage: '/images/funie.png',
+    linkedinUrl: 'https://www.linkedin.com/in/funie-zhuwao-9a5961343/',
+    githubUrl: 'https://crop-disease-detector-v2-ba.vercel.app/',
+  },
+  {
+    id: 'dev-7',
+    name: 'Tafadzwa (Baba Harare) Kanhoodza',
+    specialization: 'Development',
+    hub: 'Dzivarasekwa',
+    photo: '/images/tafadzwa-kanhohodza.jpg',
+    projectTitle: 'Easy Park Space Finder app',
+    projectDescription: 'Created an app that finds free parking space easily with real time availability and easy booking system.',
+    projectImage: '/images/taflo.jpg',
+    linkedinUrl: 'https://www.linkedin.com/in/tafadzwa-kanhoodza-profile',
+    githubUrl: 'https://parking-space-finder-five.vercel.app/',
+  },
+    {
+    id: 'dev-9',
+    name: 'Nigel Sota',
+    specialization: 'Development',
+    hub: 'Dzivarasekwa',
+    photo: '/images/sota.jpg',
+    projectTitle: 'Support Ticket System Web App',
+    projectDescription: 'Built a system that analyzes ticket content and, in real-time, predicts the correct category and routes it to the right team. This not only streamlines the process but also drastically reduces response times, freeing up teams to focus on solving problems, not sorting them.',
+    projectImage: '/images/sota nigel.jpg',
+    linkedinUrl: 'https://ticket-pilot-nu.vercel.app/',
+    githubUrl: '',
+  },
+  {
+    id: 'dev-2',
+    name: 'Sharon Mwandura',
+    specialization: 'Development',
+    hub: 'Dzivarasekwa',
+    photo: '/images/sharon.jpg',
+    projectTitle: 'Eco Basket Online Shop (Pure HTML)',
+    projectDescription: 'Developed an online shop using pure HTML, "Eco Basket," which sells fresh vegetables and healthy produce like maize and various other vegetables, focusing on a simple and accessible user interface.',
+    projectImage: '/images/eco-basket.png',
+    linkedinUrl: 'https://www.linkedin.com/in/sharon-e-mwandura-3a576234b',
+    githubUrl: 'https://github.com/sharonmwandura/community-events-app',
+  },
+    {
+    id: 'dev-4',
+    name: 'Michael (Glockboy) Dendere',
+    specialization: 'Development',
+    hub: 'Dzivarasekwa',
+    photo: '/images/mikela.jpg',
+    projectTitle: 'AI Notes Taker App',
+    projectDescription: 'Developed a AI powered note taking application eheowytevdbnkwedcnxmld mkwjdb mkjdb xmsjdb xnsdv nsd xnbd sdbnsjdbdnjdb njbdjebdndebdnwjkjdbdms.',
+    projectImage: '/images/mikela pr.jpg',
+    linkedinUrl: 'https://www.linkedin.com/in/michael-dendere-profile',
+    githubUrl: 'https://app-ai-note.vercel.app/ ',
+  },
+  
+  {
+    id: 'dev-5',
+    name: 'Tadiwanashe Sipambeni',
+    specialization: 'Development',
+    hub: 'Dzivarasekwa',
+    photo: '/images/dickhead.jpg',
+    projectTitle: 'VID Project for Driving in Zimbabwe',
+    projectDescription: 'Developed a project related to Vehicle Identification Document (VID) processes, specifically tailored for driving regulations and procedures in Zimbabwe.',
+    projectImage: '/images/tadex.jpg', 
+    linkedinUrl: null,
+    githubUrl: 'https://github.com/Tadiwanashe20/MIniproject.git',
+  },
+  {
+    id: 'dev-8',
+    name: ' Makomborero Kayden Chidziva',
+    specialization: 'Development',
+    hub: 'Dzivarasekwa',
+    photo: '/images/kayden.jpg',
+    projectTitle: 'SnapEvent-An app that allows you to take pictures and create events,share QR code and also collect photos.',
+    projectDescription: 'Created instant photo galleries for events. Guests can scan, share, and view photos in real time No apps No accounts. No friction.',
+    projectImage: '/images/kayden-pr.png',
+    linkedinUrl: 'https://www.linkedin.com/in/kayden-profile',
+    githubUrl: 'https://snap-event-henna.vercel.app/#',
+  },
+  {
+    id: 'dev-3',
+    name: 'Fellan (Sauce) Mahove',
+    specialization: 'Development',
+    hub: 'Dzivarasekwa',
+    photo: '/images/sauce.jpg',
+    projectTitle: 'Inventory Management System for SMEs',
+    projectDescription: 'Created a web-based inventory management system tailored for small and medium-sized enterprises (SMEs) to track stock, sales, and orders efficiently.',
+    projectImage: 'https://placehold.co/400x250/1A56DB/FFFFFF?text=Dev+Project+3',
+    linkedinUrl: 'https://www.linkedin.com/in/fellan-mahove-profile',
+    githubUrl: 'https://github.com/fellanmahove/inventory-system',
+  },
+  
+  {
+    id: 'dev-10',
+    name: 'Dion Dzwengwe',
+    specialization: 'Development',
+    hub: 'Dzivarasekwa',
+    photo: '/images/dion.jpg',
+    projectTitle: 'Weather Forecasting Web App',
+    projectDescription: 'Built a web application that fetches and displays real-time weather data for various locations using external APIs, with a clean and intuitive interface.',
+    projectImage: 'https://placehold.co/400x250/EC4899/FFFFFF?text=Dev+Project+9',
+    linkedinUrl: 'https://www.linkedin.com/in/niget-sota-profile',
+    githubUrl: 'https://github.com/nigetsota/weather-app',
+  },
+
+  // Design Students
+
+    {
+    id: 'des-3',
+    name: 'Tapiwa Gombarume',
+    specialization: 'Design',
+    hub: 'Dzivarasekwa',
+    photo: '/images/tapiwa.jpg',
+    projectTitle: 'HustleHub-A mobile platform',
+    projectDescription: 'Created a mobile platform for side hustlers,informal traders and small business owners that heps them grow their businesses and connect with more customers.',
+    projectImage: '/images/tapiwa-pr.png',
+    linkedinUrl: 'https://www.linkedin.com/posts/tapiwa-gombarume-16b033347_productdesign-zimtech-designforafrica-activity-7340647493967175681-rqI9?utm_source=share&utm_medium=member_android&rcm=ACoAAFat-CMBMgnJU5qpgeQGRbZonAFj5mggZ58',
+    githubUrl: null,
+  },
+  {
+    id: 'des-5',
+    name: 'Kirsty Matyukira',
+    specialization: 'Design',
+    hub: 'Dzivarasekwa',
+    photo: '/images/serviek.jpg',
+    projectTitle: 'E-Commerce App',
+    projectDescription: 'E-commerce app that sells hygiene products.',
+    projectImage: '/images/servie-pr.png',
+    linkedinUrl: 'https://www.linkedin.com/posts/kirsty-matyukira-008766309_darkui-ecommercedesign-womenintech-activity-7354514399430115330-N5Og?utm_source=share&utm_medium=member_ios&rcm=ACoAAFaWnqYBpO85Nb-tzPm_JxfibqBM8rbTXKsn',
+    githubUrl: null,
+  },
+  {
+    id: 'des-2',
+    name: 'Welma Kayanga',
+    specialization: 'Design',
+    hub: 'Dzivarasekwa',
+    photo: '/images/welma-kayanga.jpg',
+    projectTitle: 'Wedding and Events Planner Web App',
+    projectDescription: 'Designed a wedding and events planner web app .',
+    projectImage: '/images/welma-pr.jpg',
+    linkedinUrl: 'https://www.linkedin.com/in/welma-kayanga-profile',
+    githubUrl: null,
+  },
+    
+  {
+    id: 'des-4',
+    name: 'Malcom Mbazangi',
+    specialization: 'Design',
+    hub: 'Dzivarasekwa',
+    photo: '/images/malcom.jpg', // Placeholder, replace with actual if available
+    projectTitle: 'Website Layout and Visual Design for a Startup',
+    projectDescription: 'Designed the complete visual layout and user interface for a new tech startup\'s website, ensuring a modern, intuitive, and engaging user experience.',
+    projectImage: 'https://placehold.co/400x250/EC4899/FFFFFF?text=Design+Project+4',
+    linkedinUrl: 'https://www.linkedin.com/in/malcom-mbazangi-profile',
+    githubUrl: null,
+  },
+  {
+    id: 'des-1',
+    name: 'Millicent Gumbira',
+    specialization: 'Design',
+    hub: 'Dzivarasekwa',
+    photo: '/images/millicent-gumbira.jpg',
+    projectTitle: 'Millie Trends - E-commerce Platform Design',
+    projectDescription: `She designed Millie Trends, her first UI/UX website project. It's an e-commerce platform for plus-size women, focusing on creating a modern, body-positive online space. The project allowed her to explore visual hierarchy, layout, and mobile responsiveness in Figma.`,
+    projectImage: '/images/millicent-pr.png',
+    linkedinUrl: 'https://www.figma.com/design/0ZIl3qaRzt1QmOqjlWAPoW/Website-Project?node-id=0-1&t=upx0EyhSC5r9dUgN-1', // Updated to Figma link
+    githubUrl: null,
+  },
+    {
+    id: 'des-8',
+    name: 'Anesu Mamu Zakeyu',
+    specialization: 'Design',
+    hub: 'Dzivarasekwa',
+    photo: '/images/anesu-mamu.jpg',
+    projectTitle: 'An online electronics store',
+    projectDescription: 'Anesu created an online electronics store that redefines the way people shop for gadgets. His design approach prioritizes intuitive navigation, visually appealing interfaces, and streamlined checkout processes, making is app a go-to destination for tech enthusiasts.',
+    projectImage: '/images/mamu pr.jpg',
+    linkedinUrl: 'https://www.linkedin.com/in/anesu-mamu-profile',
+    githubUrl: 'https://www.figma.com/design/bxq0dk1ri9SfIF3de2bLDd/Ancola?node-id=0-1&t=z9hV0KWwOr0QZZnY-1',
+  },
+  
+  {
+    id: 'des-6',
+    name: 'Lorraine Thom',
+    specialization: 'Design',
+    hub: 'Dzivarasekwa',
+    photo: '/images/lorraine.jpg',
+    projectTitle: 'Designed the Yo Mix Mobile App',
+    projectDescription: 'Designed a mobile app, focusing on user friendly features and interactive interface.',
+    projectImage: '/images/lolo pr.jpg',
+    linkedinUrl: null,
+    githubUrl: 'https://www.figma.com/design/HANgfzCCy1JraVXyoiwsAq/Untitled?node-id=0-1&t=L5R5CsmsV65nzs4F-1',
+  },
+  {
+    id: 'des-7',
+    name: 'Dennis Tapiwa Chidamaya',
+    specialization: 'Design',
+    hub: 'Dzivarasekwa',
+    photo: '/images/dennis.jpg', // Placeholder, replace with actual if available
+    projectTitle: 'Infographic Series for Public Health Campaign',
+    projectDescription: 'Created a series of informative and visually compelling infographics to support a public health awareness campaign on common diseases.',
+    projectImage: 'https://placehold.co/400x250/10B981/FFFFFF?text=Design+Project+7',
+    linkedinUrl: 'https://www.linkedin.com/in/tapiwa-chidamaya-profile',
+    githubUrl: null,
+  },
+  
+
+    // Digital Marketing Students
   {
     id: 'dm-1',
     name: 'Precious Tendayi',
@@ -54,18 +280,6 @@ const studentsData = [
     githubUrl: null,
   },
   {
-    id: 'dm-3',
-    name: 'Munashe Charindapazne',
-    specialization: 'Digital Marketing',
-    hub: 'Dzivarasekwa',
-    photo: '/images/tutu.jpg',
-    projectTitle: 'Content Marketing for Educational Platform',
-    projectDescription: 'Created a content marketing plan and produced engaging blog posts, videos, and infographics for an online educational platform targeting high school students.',
-    projectImage: 'https://placehold.co/400x250/1A56DB/FFFFFF?text=DM+Project+3',
-    linkedinUrl: 'https://www.linkedin.com/in/munashe-charindapazne-profile',
-    githubUrl: null,
-  },
-  {
     id: 'dm-4',
     name: 'Nomsa Sibanda',
     specialization: 'Digital Marketing',
@@ -77,226 +291,19 @@ const studentsData = [
     linkedinUrl: 'https://www.linkedin.com/in/nomsa-sibanda-275492347/',
     design:'https://www.canva.com/design/DAGr1O4sVBU/vYX75M0Hh6PoNkZDZHmTcw/edit' ,
   },
-
-  // Development Students
   {
-    id: 'dev-1',
-    name: 'Nicole Tatenda Zonke (Me)',
-    specialization: 'Development',
+    id: 'dm-3',
+    name: 'Munashe Charindapazne',
+    specialization: 'Digital Marketing',
     hub: 'Dzivarasekwa',
-    photo: '/images/mukundi.jpg',
-    projectTitle: 'Interactive Yearbook Web Application',
-    projectDescription: 'Developed a dynamic web application to showcase student profiles and projects for the Dzivarasekwa Hub yearbook, featuring responsive design and smooth navigation.',
-    projectImage: '/images/my pr.png',
-    linkedinUrl: 'https://www.linkedin.com/in/nicole-zonke-profile', 
-    githubUrl: 'https://github.com/nicolezonke/yearbook-project', 
-  },
-  {
-    id: 'dev-2',
-    name: 'Sharon Mwandura',
-    specialization: 'Development',
-    hub: 'Dzivarasekwa',
-    photo: '/images/sharon.jpg',
-    projectTitle: 'Eco Basket Online Shop (Pure HTML)',
-    projectDescription: 'Developed an online shop using pure HTML, "Eco Basket," which sells fresh vegetables and healthy produce like maize and various other vegetables, focusing on a simple and accessible user interface.',
-    projectImage: '/images/eco-basket.png',
-    linkedinUrl: 'https://www.linkedin.com/in/sharon-e-mwandura-3a576234b',
-    githubUrl: 'https://github.com/sharonmwandura/community-events-app',
-  },
-  {
-    id: 'dev-3',
-    name: 'Fellan (Sauce) Mahove',
-    specialization: 'Development',
-    hub: 'Dzivarasekwa',
-    photo: '/images/sauce.jpg',
-    projectTitle: 'Inventory Management System for SMEs',
-    projectDescription: 'Created a web-based inventory management system tailored for small and medium-sized enterprises (SMEs) to track stock, sales, and orders efficiently.',
-    projectImage: 'https://placehold.co/400x250/1A56DB/FFFFFF?text=Dev+Project+3',
-    linkedinUrl: 'https://www.linkedin.com/in/fellan-mahove-profile',
-    githubUrl: 'https://github.com/fellanmahove/inventory-system',
-  },
-  {
-    id: 'dev-4',
-    name: 'Michael (Glockboy) Dendere',
-    specialization: 'Development',
-    hub: 'Dzivarasekwa',
-    photo: '/images/mikela.jpg',
-    projectTitle: 'AI Notes Taker App',
-    projectDescription: 'Developed a AI powered note taking application.',
-    projectImage: '/images/mikela pr.jpg',
-    linkedinUrl: 'https://www.linkedin.com/in/michael-dendere-profile',
-    githubUrl: 'https://app-ai-note.vercel.app/ ',
-  },
-  {
-    id: 'dev-5',
-    name: 'Tadiwanashe Sipambeni',
-    specialization: 'Development',
-    hub: 'Dzivarasekwa',
-    photo: '/images/dickhead.jpg',
-    projectTitle: 'VID Project for Driving in Zimbabwe',
-    projectDescription: 'Developed a project related to Vehicle Identification Document (VID) processes, specifically tailored for driving regulations and procedures in Zimbabwe.',
-    projectImage: '/images/tadex.jpg', 
-    linkedinUrl: null,
-    githubUrl: 'https://github.com/Tadiwanashe20/MIniproject.git',
-  },
-  { id: 'dev-6',
-    name: 'Funie Franklin Zhuwao',
-    specialization: 'Development',
-    hub: 'Dzivarasekwa',
-    photo: '/images/funie-zhuwao.jpg',
-    projectTitle: 'Crop Disease Detection',
-    projectDescription: 'Developed a web application where users can upload crop pictures to detect the crop disease, discover.',
-    projectImage: '/images/funie.png',
-    linkedinUrl: 'https://www.linkedin.com/in/funie-zhuwao-9a5961343/',
-    githubUrl: 'https://crop-disease-detector-v2-ba.vercel.app/',
-  },
-
-  {
-    id: 'dev-7',
-    name: 'Tafadzwa (Baba Harare) Kanhoodza',
-    specialization: 'Development',
-    hub: 'Dzivarasekwa',
-    photo: '/images/tafadzwa-kanhohodza.jpg',
-    projectTitle: 'Easy Park Space Finder app',
-    projectDescription: 'Created an app that finds free parking space easily with real time availability and easy booking system.',
-    projectImage: '/images/taflo.jpg',
-    linkedinUrl: 'https://www.linkedin.com/in/tafadzwa-kanhoodza-profile',
-    githubUrl: 'https://parking-space-finder-five.vercel.app/',
-  },
-  {
-    id: 'dev-8',
-    name: ' Makomborero Kayden Chidziva',
-    specialization: 'Development',
-    hub: 'Dzivarasekwa',
-    photo: '/images/kayden.jpg',
-    projectTitle: 'SnapEvent-An app that allows you to take pictures and create events,share QR code and also collect photos.',
-    projectDescription: 'Created instant photo galleries for events. Guests can scan, share, and view photos in real time No apps No accounts. No friction.',
-    projectImage: '/images/kayden-pr.png',
-    linkedinUrl: 'https://www.linkedin.com/in/kayden-profile',
-    githubUrl: 'https://snap-event-henna.vercel.app/#',
-  },
-  {
-    id: 'dev-9',
-    name: 'Niget Sota',
-    specialization: 'Development',
-    hub: 'Dzivarasekwa',
-    photo: '/images/sota.jpg',
-    projectTitle: 'Support Ticket System Web App',
-    projectDescription: 'Built a system that analyzes ticket content and, in real-time, predicts the correct category and routes it to the right team. This not only streamlines the process but also drastically reduces response times, freeing up teams to focus on solving problems, not sorting them.',
-    projectImage: '/images/sota nigel.jpg',
-    linkedinUrl: 'https://ticket-pilot-nu.vercel.app/',
-    githubUrl: '',
-  },
-  {
-    id: 'dev-10',
-    name: 'Dion Dzwengwe',
-    specialization: 'Development',
-    hub: 'Dzivarasekwa',
-    photo: '/images/dion.jpg',
-    projectTitle: 'Weather Forecasting Web App',
-    projectDescription: 'Built a web application that fetches and displays real-time weather data for various locations using external APIs, with a clean and intuitive interface.',
-    projectImage: 'https://placehold.co/400x250/EC4899/FFFFFF?text=Dev+Project+9',
-    linkedinUrl: 'https://www.linkedin.com/in/niget-sota-profile',
-    githubUrl: 'https://github.com/nigetsota/weather-app',
-  },
-
-  // Design Students
-  {
-    id: 'des-1',
-    name: 'Millicent Gumbira',
-    specialization: 'Design',
-    hub: 'Dzivarasekwa',
-    photo: '/images/millicent-gumbira.jpg',
-    projectTitle: 'Millie Trends - E-commerce Platform Design',
-    projectDescription: `She designed Millie Trends, her first UI/UX website project. It's an e-commerce platform for plus-size women, focusing on creating a modern, body-positive online space. The project allowed her to explore visual hierarchy, layout, and mobile responsiveness in Figma.`,
-    projectImage: '/images/millicent-pr.png',
-    linkedinUrl: 'https://www.figma.com/design/0ZIl3qaRzt1QmOqjlWAPoW/Website-Project?node-id=0-1&t=upx0EyhSC5r9dUgN-1', // Updated to Figma link
+    photo: '/images/tutu.jpg',
+    projectTitle: 'Content Marketing for Educational Platform',
+    projectDescription: 'Created a content marketing plan and produced engaging blog posts, videos, and infographics for an online educational platform targeting high school students.',
+    projectImage: 'https://placehold.co/400x250/1A56DB/FFFFFF?text=DM+Project+3',
+    linkedinUrl: 'https://www.linkedin.com/in/munashe-charindapazne-profile',
     githubUrl: null,
   },
-  {
-    id: 'des-2',
-    name: 'Welma Kayanga',
-    specialization: 'Design',
-    hub: 'Dzivarasekwa',
-    photo: '/images/welma-kayanga.jpg',
-    projectTitle: 'Wedding and Events Planner Web App',
-    projectDescription: 'Designed a wedding and events planner web app .',
-    projectImage: '/images/welma-pr.jpg',
-    linkedinUrl: 'https://www.linkedin.com/in/welma-kayanga-profile',
-    githubUrl: null,
-  },
-  {
-    id: 'des-3',
-    name: 'Tapiwa Gombarume',
-    specialization: 'Design',
-    hub: 'Dzivarasekwa',
-    photo: '/images/tapiwa.jpg',
-    projectTitle: 'HustleHub-A mobile platform',
-    projectDescription: 'Created a mobile platform for side hustlers,informal traders and small business owners that heps them grow their businesses and connect with more customers.',
-    projectImage: '/images/tapiwa-pr.png',
-    linkedinUrl: 'https://www.linkedin.com/posts/tapiwa-gombarume-16b033347_productdesign-zimtech-designforafrica-activity-7340647493967175681-rqI9?utm_source=share&utm_medium=member_android&rcm=ACoAAFat-CMBMgnJU5qpgeQGRbZonAFj5mggZ58',
-    githubUrl: null,
-  },
-  {
-    id: 'des-4',
-    name: 'Malcom Mbazangi',
-    specialization: 'Design',
-    hub: 'Dzivarasekwa',
-    photo: '/images/malcom.jpg', // Placeholder, replace with actual if available
-    projectTitle: 'Website Layout and Visual Design for a Startup',
-    projectDescription: 'Designed the complete visual layout and user interface for a new tech startup\'s website, ensuring a modern, intuitive, and engaging user experience.',
-    projectImage: 'https://placehold.co/400x250/EC4899/FFFFFF?text=Design+Project+4',
-    linkedinUrl: 'https://www.linkedin.com/in/malcom-mbazangi-profile',
-    githubUrl: null,
-  },
-  {
-    id: 'des-5',
-    name: 'Kirsty Matyukira',
-    specialization: 'Design',
-    hub: 'Dzivarasekwa',
-    photo: '/images/serviek.jpg',
-    projectTitle: 'E-Commerce App',
-    projectDescription: 'E-commerce app that sells hygiene products.',
-    projectImage: '/images/servie-pr.png',
-    linkedinUrl: 'https://www.linkedin.com/posts/kirsty-matyukira-008766309_darkui-ecommercedesign-womenintech-activity-7354514399430115330-N5Og?utm_source=share&utm_medium=member_ios&rcm=ACoAAFaWnqYBpO85Nb-tzPm_JxfibqBM8rbTXKs c ;p',
-    githubUrl: null,
-  },
-  {
-    id: 'des-6',
-    name: 'Lorraine Thom',
-    specialization: 'Design',
-    hub: 'Dzivarasekwa',
-    photo: '/images/lorraine.jpg',
-    projectTitle: 'Designed the Yo Mix Mobile App',
-    projectDescription: 'Designed a mobile app, focusing on user friendly features and interactive interface.',
-    projectImage: '/images/lolo pr.jpg',
-    linkedinUrl: null,
-    githubUrl: 'https://www.figma.com/design/HANgfzCCy1JraVXyoiwsAq/Untitled?node-id=0-1&t=L5R5CsmsV65nzs4F-1',
-  },
-  {
-    id: 'des-7',
-    name: 'Dennis Tapiwa Chidamaya',
-    specialization: 'Design',
-    hub: 'Dzivarasekwa',
-    photo: '/images/dennis.jpg', // Placeholder, replace with actual if available
-    projectTitle: 'Infographic Series for Public Health Campaign',
-    projectDescription: 'Created a series of informative and visually compelling infographics to support a public health awareness campaign on common diseases.',
-    projectImage: 'https://placehold.co/400x250/10B981/FFFFFF?text=Design+Project+7',
-    linkedinUrl: 'https://www.linkedin.com/in/tapiwa-chidamaya-profile',
-    githubUrl: null,
-  },
-  {
-    id: 'des-8',
-    name: 'Anesu Mamu Zakeyu',
-    specialization: 'Design',
-    hub: 'Dzivarasekwa',
-    photo: '/images/anesu-mamu.jpg',
-    projectTitle: 'An online electronics store',
-    projectDescription: 'Anesu created an online electronics store that redefines the way people shop for gadgets. His design approach prioritizes intuitive navigation, visually appealing interfaces, and streamlined checkout processes, making is app a go-to destination for tech enthusiasts.',
-    projectImage: '/images/mamu pr.jpg',
-    linkedinUrl: 'https://www.linkedin.com/in/anesu-mamu-profile',
-    githubUrl: 'https://www.figma.com/design/bxq0dk1ri9SfIF3de2bLDd/Ancola?node-id=0-1&t=z9hV0KWwOr0QZZnY-1',
-  },
+  
 ];
 
 // Instructor Data
@@ -304,21 +311,21 @@ const instructorsData = [
   {
     id: 'inst-1',
     name: 'Fadzai Chigoma',
-    role: 'Instructor',
+    role: 'Digital Marketing',
     photo: '/images/fadzie.jpg',
     bio: 'Fadzi, Digital Marketing Instructor: Fadzi specializes in the dynamic field of digital marketing. She teaches students how to create and execute effective marketing campaigns, understand consumer behavior, and utilize various digital platforms to promote projects and businesses.',
   },
   {
     id: 'inst-2',
     name: 'Simbarashe Mhlaulo',
-    role: 'Hub Lead/Instructor',
+    role: 'Software Development/Hub Lead',
     photo: '/images/sir simba.png', 
     bio: 'Simba, Web Development Instructor & Hub Lead: As both the Web Development Instructor and the Hub Lead, Simba is at the forefront of the hubs technical and administrative direction. He is responsible for teaching students the fundamentals and advanced topics of web development while also overseeing the day-to-day operations and strategic vision of the entire hub.',
   },
   {
     id: 'inst-3',
     name: 'Collin Manyande',
-    role: 'Instructor',
+    role: 'UI/UX Design ',
     photo: '/images/collin.png', 
     bio: 'Colin, UI/UX Design Instructor: Colin is the expert in UI/UX design. His role is to instruct students on the principles of creating user-friendly and aesthetically pleasing interfaces and experiences. He guides them in developing designs that are not only beautiful but also intuitive and functional for end-users.',
   },
@@ -421,7 +428,7 @@ const Header = ({ navigate }) => {
 
 // Footer Component
 const Footer = () => (
-  <footer className="bg-gray-100 text-gray-800 p-6 text-center shadow-inner mt-8">
+  <footer className="bg-blue-800 text-gray-200 p-6 text-center shadow-inner mt-8">
     <div className="container mx-auto">
       <p className="text-sm md:text-base">&copy; {new Date().getFullYear()} Dzivarasekwa Hub. All rights reserved.</p>
       <p className="text-xs md:text-sm mt-2">Designed and created with passion by the Dzivarasekwa Hub's Nicole Tatenda Zonke.</p>
@@ -460,58 +467,81 @@ const HomePage = ({ navigate }) => (
 );
 
 // Students Grid Page Component
-const StudentsPage = ({ navigate, setSelectedStudent }) => (
-  <section className="bg-white text-gray-800 min-h-screen pt-24 pb-8">
-    <div className="container mx-auto p-4 md:p-8">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">The Students</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {studentsData.map((student) => (
-          <div
-            key={student.id}
-            className="student-card bg-gray-100 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 cursor-pointer"
-            onClick={() => {
-              setSelectedStudent(student);
-              navigate('studentDetail');
-            }}
-          >
-            <div className="relative h-64 overflow-hidden">
-              <img
-                src={student.photo}
-                alt={student.name}
-                className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/150x150/1A56DB/FFFFFF?text=${student.name.split(' ').map(n => n[0]).join('')}`; }}
-              />
-              {/*
-                 * FIX: The student's name was not appearing because of a class conflict and a lack of specific positioning.
-                 * The original code had both 'text-gray-900' and 'text-white' on the same element. 'text-gray-900' was likely overriding 'text-white'.
-                 * I have removed the conflicting class and added positioning classes ('absolute', 'bottom-4', 'left-4') to make the name visible and correctly placed.
-                 * I also changed the gradient from-gray-200 to from-black to ensure the white text is readable against the image.
-                 */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
-              <p className="absolute bottom-4 left-4 text-xl font-bold text-white z-10">{student.name}</p>
-            </div>
-            <div className="p-6">
-              <p className="text-blue-600 text-sm font-semibold mb-2">{student.specialization}</p>
-              <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-                {student.projectDescription}
-              </p>
-              <button
-                className="w-full bg-blue-500 text-white font-semibold py-2 rounded-full hover:bg-blue-600 transition duration-300"
-                onClick={(e) => {
-                  e.stopPropagation(); // Prevent card click from triggering
-                  setSelectedStudent(student);
-                  navigate('studentDetail');
-                }}
-              >
-                View Profile
-              </button>
-            </div>
+const StudentsPage = ({ navigate, setSelectedStudent }) => {
+  // Filter students by specialization to group them
+  const developmentStudents = studentsData.filter(student => student.specialization === 'Development');
+  const designStudents = studentsData.filter(student => student.specialization === 'Design');
+  const marketingStudents = studentsData.filter(student => student.specialization === 'Digital Marketing');
+
+  // Helper function to render a group of student cards
+  const renderStudentGroup = (students) => (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {students.map((student) => (
+        <div
+          key={student.id}
+          className="student-card bg-gray-100 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+          onClick={() => {
+            setSelectedStudent(student);
+            navigate('studentDetail');
+          }}
+        >
+          <div className="relative h-64 overflow-hidden">
+            <img
+              src={student.photo}
+              alt={student.name}
+              className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/150x150/1A56DB/FFFFFF?text=${student.name.split(' ').map(n => n[0]).join('')}`; }}
+            />
+            {/* The overlay has been removed for a cleaner look */}
+            <p className="absolute bottom-4 left-4 text-xl font-bold text-white z-10">{student.name}</p>
           </div>
-        ))}
-      </div>
+          <div className="p-6">
+            <p className="text-blue-600 text-sm font-semibold mb-2">{student.specialization}</p>
+            <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+              {student.projectDescription}
+            </p>
+            <button
+              className="w-full bg-blue-500 text-white font-semibold py-2 rounded-full hover:bg-blue-600 transition duration-300"
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedStudent(student);
+                navigate('studentDetail');
+              }}
+            >
+              View Profile
+            </button>
+          </div>
+        </div>
+      ))}
     </div>
-  </section>
-);
+  );
+
+  return (
+    <section className="bg-white text-gray-800 min-h-screen pt-24 pb-8">
+      <div className="container mx-auto p-4 md:p-8">
+      
+
+        {/* Development Students Section */}
+        <h3 className="text-2xl md:text-3xl font-bold text-blue-800 text-center mt-12 mb-6">Development Students</h3>
+        {renderStudentGroup(developmentStudents)}
+        
+        {/* Separator to act as a page break */}
+        <div className="my-12 border-t-4 border-gray-300 rounded-full w-24 mx-auto"></div>
+
+        {/* Design Students Section */}
+        <h3 className="text-2xl md:text-3xl font-bold text-blue-800 text-center mt-12 mb-6">Design Students</h3>
+        {renderStudentGroup(designStudents)}
+
+        {/* Separator to act as a page break */}
+        <div className="my-12 border-t-4 border-gray-300 rounded-full w-24 mx-auto"></div>
+
+        {/* Digital Marketing Students Section */}
+        <h3 className="text-2xl md:text-3xl font-bold text-blue-800 text-center mt-12 mb-6">Digital Marketing Students</h3>
+        {renderStudentGroup(marketingStudents)}
+      </div>
+    </section>
+  );
+};
 
 // Student Detail Page Component
 const StudentDetailPage = ({ student, navigate }) => {
@@ -554,7 +584,6 @@ const StudentDetailPage = ({ student, navigate }) => {
                 `Featured Project: ${student.projectTitle}`
               )}
             </h4>
-            {/* Updated project image container with a consistent aspect ratio */}
             <div className="bg-white rounded-lg p-6 flex flex-col md:flex-row items-center md:space-x-6 space-y-6 md:space-y-0">
               <div className="w-full md:w-1/2 flex-shrink-0 relative overflow-hidden" style={{ paddingTop: '56.25%' }}> {/* 16:9 Aspect Ratio */}
                 <img
@@ -602,46 +631,51 @@ const StudentDetailPage = ({ student, navigate }) => {
   );
 };
 
-// Projects Page Component (simple listing for now)
+// Projects Page Component
 const ProjectsPage = ({ navigate, setSelectedStudent }) => (
   <section className="bg-white text-gray-800 min-h-screen pt-24 pb-8">
     <div className="container mx-auto p-4 md:p-8">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">Showcased Projects</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">
+        Projects Showcase
+      </h2>
+      <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        Explore the innovative projects our students have created, showcasing their skills in development, design, and digital marketing. Click on any project to learn more about the creator.
+      </p>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {studentsData.map((student) => (
           <div
             key={student.id}
-            className="bg-gray-100 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+            className="project-card bg-gray-100 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 cursor-pointer"
             onClick={() => {
               setSelectedStudent(student);
               navigate('studentDetail');
             }}
           >
-            {/* Updated project image container with a consistent aspect ratio */}
-            <div className="w-full relative overflow-hidden" style={{ paddingTop: '56.25%' }}> {/* 16:9 Aspect Ratio */}
-                <img
-                  src={student.projectImage}
-                  alt={student.projectTitle}
-                  className="absolute inset-0 w-full h-full max-w-full object-contain rounded-t-lg"
-                  onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/400x225/1A56DB/FFFFFF?text=Project+Image`; }}
-                />
+            <div className="relative h-48 overflow-hidden">
+              <img
+                src={student.projectImage}
+                alt={student.projectTitle}
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/400x250/1A56DB/FFFFFF?text=Project+Image`; }}
+              />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold text-blue-600 mb-1">{student.projectTitle}</h3>
-              <p className="text-sm text-gray-600 mb-2">{student.specialization} Project by {student.name}</p>
-              <p className="text-gray-500 text-sm mb-4 line-clamp-3">
-                {student.projectDescription}
-              </p>
-              <button
-                className="w-full bg-blue-500 text-white font-semibold py-2 rounded-full hover:bg-blue-600 transition duration-300"
-                onClick={(e) => {
-                  e.stopPropagation(); // Prevent card click from triggering
-                  setSelectedStudent(student);
-                  navigate('studentDetail');
-                }}
-              >
-                View Details
-              </button>
+              <h3 className="text-xl font-bold text-blue-800 mb-2 truncate">{student.projectTitle}</h3>
+              <p className="text-sm text-gray-600 mb-4 line-clamp-3">{student.projectDescription}</p>
+              <div className="flex items-center justify-between">
+                <p className="text-sm font-medium text-gray-500">{student.specialization}</p>
+                <button
+                  className="bg-blue-500 text-white font-semibold py-1 px-4 rounded-full hover:bg-blue-600 transition duration-300"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setSelectedStudent(student);
+                    navigate('studentDetail');
+                  }}
+                >
+                  View
+                </button>
+              </div>
             </div>
           </div>
         ))}
@@ -651,25 +685,45 @@ const ProjectsPage = ({ navigate, setSelectedStudent }) => (
 );
 
 
-// New Memories Page Component
+// Memories Page Component
 const MemoriesPage = () => (
   <section className="bg-white text-gray-800 min-h-screen pt-24 pb-8">
-    <div className="container mx-auto p-4 md:p-8 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-4">Hub Memories Throughout The Year</h2>
-      <p className="text-lg text-gray-600 mb-8">
-        Watch our highlight reel and relive some of the best moments from our time at the Dzivarasekwa Hub!
+    <div className="container mx-auto p-4 md:p-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">Memories & Highlights</h2>
+      <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        A glimpse into our journey together—from late-night coding sessions to collaborative design sprints and memorable presentations.
       </p>
-      {/* The video container now uses the responsive styling */}
-      <div className="max-w-4xl mx-auto rounded-xl shadow-2xl">
+      
+      {/* Video Section */}
+      <div className="max-w-4xl mx-auto mb-12">
+        <h3 className="text-2xl font-bold text-blue-800 mb-4">Our Journey in a Nutshell</h3>
         <div className="video-responsive">
-          <iframe
-            src="https://www.youtube.com/embed/rhwMgVx8oTM"
-            title="Dzivarasekwa Hub Memories Video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/O-L2iY003e8" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowFullScreen
-            className="video-iframe"
+            title="Uncommon.org Dzivarasekwa Hub Journey"
           ></iframe>
+        </div>
+      </div>
+
+      {/* Photo Gallery Section */}
+      <div className="max-w-6xl mx-auto">
+        <h3 className="text-2xl font-bold text-blue-800 mb-4">Photo Gallery</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-08-27 at 14.46.29_79694878.jpg" alt="Gallery photo" />
+          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/Screenshot (172).png" alt="Gallery photo" />
+          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-08-22 at 14.10.33_8e6a21c3.jpg" alt="Gallery photo" />
+          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-09-10 at 08.24.44_4a3ee25a.jpg" alt="Gallery photo" />
+          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-09-10 at 08.24.44_c8b05d6b.jpg" alt="Gallery photo" />
+          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-09-10 at 08.24.45_04886c87.jpg" alt="Gallery photo" />
+          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-09-10 at 08.14.20_cda7edf2.jpg" alt="Gallery photo" />
+          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-09-10 at 08.14.21_5b757a84.jpg" alt="Gallery photo" />
+          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/WhatsApp Image 2025-08-27 at 15.42.10_1d549251.jpg" alt="Gallery photo" />
+          <img className="w-full h-auto rounded-lg shadow-md object-cover" src="/images/Screenshot (175).png" alt="Gallery photo" />
         </div>
       </div>
     </div>
@@ -680,24 +734,25 @@ const MemoriesPage = () => (
 const InstructorsPage = () => (
   <section className="bg-white text-gray-800 min-h-screen pt-24 pb-8">
     <div className="container mx-auto p-4 md:p-8">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">Our Instructors</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">The Instructors</h2>
+      <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        Meet the dedicated mentors who guided us on our journey. Their expertise and support were invaluable to our growth.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {instructorsData.map((instructor) => (
-          <div
-            key={instructor.id}
-            className="bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105"
-          >
-            <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-blue-600">
+          <div key={instructor.id} className="instructor-card bg-gray-100 rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
+            <div className="flex-shrink-0 w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-blue-600">
               <img
                 src={instructor.photo}
                 alt={instructor.name}
                 className="w-full h-full object-cover"
-                onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/150x150/000000/FFFFFF?text=${instructor.name.split(' ').map(n => n[0]).join('')}`; }}
+                onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/150x150/1A56DB/FFFFFF?text=${instructor.name.split(' ').map(n => n[0]).join('')}`; }}
               />
             </div>
-            <h3 className="text-xl font-bold text-blue-800">{instructor.name}</h3>
-            <p className="text-blue-600 text-sm font-medium">{instructor.role}</p>
-            <p className="text-gray-600 text-sm mt-4">{instructor.bio}</p>
+            <h3 className="text-xl font-bold text-blue-800 mb-1">{instructor.name}</h3>
+            <p className="text-md font-semibold text-blue-600 mb-4">{instructor.role}</p>
+            <p className="text-sm text-gray-600 leading-relaxed">{instructor.bio}</p>
           </div>
         ))}
       </div>
@@ -705,16 +760,21 @@ const InstructorsPage = () => (
   </section>
 );
 
-// Main App Component
-const App = () => {
+
+// Main App Component with routing logic
+export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [selectedStudent, setSelectedStudent] = useState(null);
 
-  // Simple navigation function
-  const navigate = (page) => {
+  const navigate = (page, data = null) => {
     setCurrentPage(page);
+    if (page === 'studentDetail' && data) {
+      setSelectedStudent(data);
+    }
+    // Scroll to the top of the page on navigation
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  
+
   const renderPage = () => {
     switch (currentPage) {
       case 'home':
@@ -735,7 +795,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-h-screen bg-gray-50 flex flex-col font-inter">
       <style>{responsiveStyles}</style>
       <Header navigate={navigate} />
       <main className="flex-grow">
@@ -744,6 +804,4 @@ const App = () => {
       <Footer />
     </div>
   );
-};
-
-export default App;
+}
